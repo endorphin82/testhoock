@@ -12,13 +12,19 @@ const {values, handleChange} = useMyHook()
   //   setValues({ ...values, [name]: value })
   // }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <p>
         </p>
-          <input name="name" onChange={handleChange} type="text" /> 
-          <input name="last_name" onChange={handleChange} type="text" /> 
+        <form onSubmit={handleSubmit}>
+          <input value={values['name']} name="name" onChange={handleChange} type="text" /> 
+          <input value={values['last_name']} name="last_name" onChange={handleChange} type="text" /> 
+        </form>
       </header>
     </div>
   );

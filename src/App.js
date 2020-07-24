@@ -3,7 +3,6 @@ import {useMyHook} from './util'
 import './App.css';
 
 function App() {
-  console.log(useMyHook)
 const [values, handleChange] = useMyHook()
   // const [values, setValues] = useState({})
   console.log(values)

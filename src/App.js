@@ -1,11 +1,13 @@
 import React  from 'react';
-import {useMyHook} from 'util'
+import {useMyHook} from './util'
 import './App.css';
 
 function App() {
+  console.log(useMyHook)
 const [values, handleChange] = useMyHook()
   // const [values, setValues] = useState({})
   console.log(values)
+  
   // const handleChange = (e) => {
   //   const { name, value } = e.target
   //   setValues({ ...values, [name]: value })

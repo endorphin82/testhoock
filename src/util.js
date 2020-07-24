@@ -7,5 +7,5 @@ export const useMyHook = () => {
     const { name, value } = e.target
     setValues({ ...values, [name]: value })
   }
-  return [values, handleChange];
+  return {values, handleChange};
 }
